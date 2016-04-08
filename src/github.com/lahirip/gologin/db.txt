@@ -1,0 +1,12 @@
+CREATE TABLE `test`.userlogin (
+    uid INT(10) NOT NULL AUTO_INCREMENT,
+    username VARCHAR(64) NULL DEFAULT NULL,
+    password VARCHAR(64) NULL DEFAULT NULL,
+    created DATE NULL DEFAULT NULL,
+    PRIMARY KEY (`uid`)
+);
+insert into `test`.userlogin values (1, 'me', 'password', sysdate());
+
+insert into `test`.userlogin values (2, 'test', 'password', sysdate());
+
+select * from `test`.userlogin
